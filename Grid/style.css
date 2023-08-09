@@ -1,0 +1,19 @@
+body {
+    background-color: red;
+
+    display: grid;
+    grid-template-columns: 20fr 20fr 20fr;
+    grid-template-rows: 20fr 20fr 20fr;
+    row-gap: 5px;
+    column-gap: 5px;
+    align-items: center;
+    /* grid-auto-flow: row; */
+}
+
+.items {
+    background-color: aqua;
+    width: 50px;
+    align-self: center;
+    height: 50px;
+    /* margin-top: 10px; */
+}
