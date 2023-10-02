@@ -31,3 +31,26 @@ fetch("http://localhost:4000/user/1", {
               .then((response) => {
                             console.log(response);
               });
+
+// PUT REQUEST
+
+
+
+
+fetch("http://localhost:4000/user/1", {
+           method: "PUT",
+           headers: {
+                      Accept: "application/json",
+                      "Content-Type": "application/json",
+           },
+
+           //make sure to serialize your JSON body
+           body: JSON.stringify({
+                      name: "new name",
+                      lastName: "khan",
+           }),
+})
+           .then((response) => response.json())
+           .then((response) => {
+                      console.log(response);
+           });
